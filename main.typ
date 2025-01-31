@@ -552,6 +552,10 @@ $
 
 Ici, $F^("XC" α)$ et $F^("XC" β)$ sont les parties d'échange-corrélation des matrices de Fock et dépendent de la fonctionnelle d'échange-corrélation utilisée. La théorie UHF est récupérée comme un cas particulier simplement en prenant $F^("XC" α)_("μν") = K^α_("μν")$, et de manière similaire pour $β$. Ainsi, la densité et l'énergie sont obtenues de manière analogue à celle de la méthode HF. Des estimations initiales sont faites pour les coefficients MO et un processus itératif est appliqué jusqu'à ce que la cohérence soit atteinte.
 
-=== Conclusion
+== Conclusion
 
 Le formalisme de Kohn-Sham offre une approche puissante et pratique pour résoudre les problèmes quantiques moléculaires en se basant sur la densité électronique plutôt que sur la fonction d'onde. Bien qu'il repose sur des approximations pour la fonctionnelle d'échange-corrélation, il permet des calculs précis et efficaces pour de nombreux systèmes chimiques complexes. En combinant cette méthode avec des approches plus traditionnelles basées sur la fonction d'onde, les chimistes quantiques disposent d'un ensemble robuste d'outils pour explorer et comprendre la structure et les propriétés des molécules à l'échelle atomique. La DFT reste une méthode clé dans la boîte à outils du chimiste quantique, offrant un compromis optimal entre précision et coût computationnel.
+
+#include "salma.typ"
+#include "fatima.typ"
+#include "omar.typ"
