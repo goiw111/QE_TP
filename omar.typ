@@ -18,7 +18,7 @@ GaAs, créant des interfaces qui favorisent le confinement des porteurs de charg
 électroniques et optiques.
 
 #figure(
-  image("structure-heterostructure.svg", width: 80%),
+  image("", width: 80%),
   caption: "Structure de l'hétérostructure AlGaAs/GaAs"
 )
 
