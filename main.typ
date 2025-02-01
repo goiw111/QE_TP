@@ -416,14 +416,14 @@ La méthode SCF est une procédure itérative utilisée pour trouver le meilleur
 	  node((0,4.5), align(center)[
 		  Cohérent ?
 	  ],shape: diamond),
-	  edge("l,u,uu,r", "-|>", [NON], label-pos: 0.1),
-    edge("r", "-|>", [Oui], label-pos: 0.5),
-    node((0.9,4.5), [Forces énergétiques], corner-radius: 2pt),
+	  edge("l,u,uu,r", "-|>", [NON], label-pos: 0.03),
+    edge("r", "-|>", [Oui], label-pos: 0.1),
+    node((0.71,4.5), [Forces énergétiques], corner-radius: 2pt),
   ),
   caption: "Étapes de la procédure SCF"
 )
 
-En généralisant à un formalisme non restreint en introduisant des orbitales spatiales distinctes pour les spins $α$ et $β$ dans l'équation (4.7), on obtient les équations de Pople-Nesbet :
+En généralisant à un formalisme non restreint en introduisant des orbitales spatiales distinctes pour les spins $α$ et $β$ dans l'équation (14), on obtient les équations de Pople-Nesbet :
 
 $
 F_alpha C_alpha = epsilon_alpha S C_alpha
@@ -485,7 +485,7 @@ où :
 - $E_T$ est l'énergie cinétique,
 - $E_V$ est l'énergie d'interaction électron-noyau,
 - $E_J$ est l'auto-interaction coulombienne de la densité électronique $ρ(r)$,
-- $E_{"XC"}$ est l'énergie d'échange-corrélation.
+- $E_"XC"$ est l'énergie d'échange-corrélation.
 
 En adoptant un format non restreint, les densités totales des électrons $α$ et $β$ peuvent être écrites comme suit :
 $
