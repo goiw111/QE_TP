@@ -18,7 +18,7 @@ GaAs, créant des interfaces qui favorisent le confinement des porteurs de charg
 électroniques et optiques.
 
 #figure(
-  image("", width: 80%),
+  image("1.png", width: 80%),
   caption: "Structure de l'hétérostructure AlGaAs/GaAs"
 )
 
@@ -51,7 +51,7 @@ incident sur sa surface et génère des porteurs de charge (électrons et trous)
 électrique.
 
 #figure(
-  image("photodetecteurs.svg", width: 80%),
+  image("2.png", width: 80%),
   caption: "Les photodétecteurs"
 )
 
@@ -68,7 +68,7 @@ courant. Il a trois terminaux : la source, le drain et la grille. Le courant ent
 la tension appliquée à la grille.
 
 #figure(
-  image("transistor.svg", width: 80%),
+  image("3.jpg", width: 80%),
   caption: "Transistor à effet de champ"
 )
 
@@ -84,7 +84,7 @@ Un amplificateur optique est un dispositif qui amplifie un signal lumineux sans 
 utilise des matériaux semi-conducteurs ou des fibres optiques dopées pour augmenter l'intensité de la lumière.
 
 #figure(
-  image("amplificateur.svg", width: 80%),
+  image("4.jpg", width: 80%),
   caption: "Amplificateur optique SOA-1190-90-YY-20dB"
 )
 
