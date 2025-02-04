@@ -53,7 +53,7 @@ qui les rend idéales pour les applications photoniques.
 == Applications des dispositifs électroniques
 === Photodétecteurs
 
-==== Définition
+ - *Définition*
 Un photodétecteur est un dispositif qui convertit la lumière (photons) en signal électrique. Il détecte les photons
 incident sur sa surface et génère des porteurs de charge (électrons et trous) en réponse, produisant ainsi un courant
 électrique.
@@ -63,14 +63,14 @@ incident sur sa surface et génère des porteurs de charge (électrons et trous)
   caption: "Les photodétecteurs"
 )
 
-==== Interprétation
+ - *Interprétation*
 Les photodétecteurs sont utilisés dans de nombreuses applications, notamment dans les systèmes de communication
 optique, les caméras, et les capteurs de lumière. Ils jouent un rôle crucial dans la détection des signaux lumineux,
 permettant la conversion d'informations lumineuses en données électroniques exploitables.
 
-=== Transistors à Effet de Champ (FET)
+ - *Transistors à Effet de Champ (FET)*
 
-==== Définition
+ - *Définition*
 Un transistor à effet de champ (FET) est un type de transistor qui utilise un champ électrique pour contrôler le
 courant. Il a trois terminaux : la source, le drain et la grille. Le courant entre la source et le drain est contrôlé par
 la tension appliquée à la grille.
@@ -80,14 +80,14 @@ la tension appliquée à la grille.
   caption: "Transistor à effet de champ"
 )
 
-==== Interprétation
+- *Interprétation*
 Les FET sont largement utilisés dans les circuits intégrés et les dispositifs numériques en raison de leur faible
 consommation d'énergie et de leur haute impédance d'entrée. Ils sont essentiels dans les applications de commutation
 et d'amplification, offrant des performances élevées dans des systèmes électroniques modernes.
 
 === Amplificateurs Optiques
 
-==== Définition
+ - *Définition*
 Un amplificateur optique est un dispositif qui amplifie un signal lumineux sans le convertir en signal électrique. Il
 utilise des matériaux semi-conducteurs ou des fibres optiques dopées pour augmenter l'intensité de la lumière.
 
@@ -96,7 +96,7 @@ utilise des matériaux semi-conducteurs ou des fibres optiques dopées pour augm
   caption: "Amplificateur optique SOA-1190-90-YY-20dB"
 )
 
-==== Interprétation
+ - *Interprétation*
 Les amplificateurs optiques sont utilisés dans les systèmes de communication par fibre optique pour renforcer les
 signaux lumineux sur de longues distances. Ils permettent de compenser les pertes de signal dues à l'atténuation de
 la fibre, améliorant ainsi la portée et la qualité des communications optiques. Ces dispositifs sont essentiels pour le

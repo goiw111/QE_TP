@@ -10,7 +10,7 @@
   title: "Étude des Propriétés Électroniques de l'Arséniure d'Aluminium (AlAs) à l'aide de Quantum ESPRESSO",
   subtitle: "TP : Physique des semi-conducteur",
   authors: ("Fatema Khay-Ali", "Salma Ettaoumy", "souhail chahmout","omar mansori", "Badr Es-sabbaby"),
-  mentors: ("PR. RFIFI SAAD","Dr. Serifi Ilias"),
+  mentors: ("PR. RFIFI SAAD", "Dr. Serifi Ilias"),
   branch: "GESE",
   academic-year: "2024-2025",
   french: true,
@@ -133,7 +133,7 @@ La technologie moderne repose sur un composant fondamental qui alimente des appa
 
 Ils jouent également un rôle clé dans l’avenir de la technologie, en stimulant les progrès dans des domaines comme l’intelligence artificielle, l’informatique quantique et d’autres innovations révolutionnaires. Ces avancées soulignent l'importance cruciale des semi-conducteurs pour relever les défis mondiaux et transformer notre façon de vivre et de travailler.
 
-== Les Semi-Conducteurs
+== Semi-Conducteurs
 === Définition d'un semi-conducteurs
 Les semi-conducteurs sont des matériaux dont la conductivité se situe entre celle des conducteurs (généralement des métaux) et celle des non-conducteurs ou des isolants (tels que les céramiques). Les semi-conducteurs peuvent être des composés, comme l'arséniure de gallium ou l'arséniure d'aluminium, ou des éléments purs, comme le germanium ou le silicium. La physique explique les théories, les propriétés et l'approche mathématique liées aux semi-conducteurs.
 
@@ -179,10 +179,10 @@ Exemple hypothétique de formation de bandes lorsqu'un grand nombre d'atomes de 
 )
 
 === Bande de conduction et bande de Valence dans les semi-conducteurs
-==== Bande de Valence
+  - *Bande de Valence*
 La bande d'énergie impliquant les niveaux d'énergie des électrons de valence est appelée bande de valence. Il s'agit de la bande d'énergie occupée la plus élevée. Par rapport aux isolants, la bande interdite des semi-conducteurs est plus petite. Elle permet aux électrons de la bande de valence de passer dans la bande de conduction lorsqu'ils reçoivent une énergie externe.
 
-==== Bande de conduction
+  - *Bande de conduction*
 Il s'agit de la bande la plus basse, inoccupée, qui comprend les niveaux d'énergie des porteurs de charge positifs (trous) ou négatifs (électrons libres). Elle contient des électrons conducteurs, ce qui entraîne la circulation du courant. La bande de conduction possède un niveau d'énergie élevé et est généralement vide. Dans les semi-conducteurs, la bande de conduction accepte les électrons de la bande de valence.
 
 === Niveau de Fermi dans les semi-conducteurs
@@ -227,7 +227,7 @@ Les semi-conducteurs peuvent être classés comme suit :
   caption: "Classification des semi-conducteurs"
 )
 
-==== Semi-conducteur intrinsèque
+- *Semi-conducteur intrinsèque*
 Un semi-conducteur intrinsèque est un matériau chimiquement très pur. Il n'est constitué que d'un seul type d'élément.
 
 #figure(
@@ -272,7 +272,7 @@ La conductivité des semi-conducteurs peut être considérablement améliorée p
   caption: "Classification des semi-conducteurs extrinsèques"
 )
 
-==== Semi-conducteur de type N
+- *Semi-conducteur de type N*
  - Principalement dû aux électrons
  - Entièrement neutre
  - I = Ih et nh >> ne
@@ -285,7 +285,7 @@ Comme le nombre d'électrons libres augmente avec l'ajout d'une impureté, les p
 
 Le cristal dans son ensemble est neutre, mais l'atome donneur devient un ion positif immobile. La conduction étant due à un grand nombre d'électrons libres, les électrons du semi-conducteur de type n sont les PORTEURS MAJORITAIRES et les trous sont les PORTEURS MINORITAIRES.
 
-==== Semi-conducteur de type P
+ - *Semi-conducteur de type P*
  - Principalement dû aux trous
  - Entièrement neutre
  - I = Ih et nh >> ne
@@ -388,7 +388,7 @@ $
 
 La méthode SCF est une procédure itérative utilisée pour trouver le meilleur ensemble possible d'orbitales moléculaires (MO) qui décrivent la structure électronique d'une molécule. La mise en œuvre la plus courante de la méthode SCF est l'approximation de Hartree-Fock (HF), bien qu'elle puisse être étendue pour inclure les effets de corrélation électronique via des méthodes comme l'interaction de configuration (CI), le cluster couplé (CC) ou la théorie de la fonctionnelle de densité (DFT).
 
-==== Étapes de la procédure SCF :
+- *Étapes de la procédure SCF :*
 1. *Estimation initiale* : Commencez avec une estimation initiale des MO.
 2. *Construction de la matrice de Fock* : En utilisant les MO actuels, construisez la matrice de Fock $"F"$, qui inclut à la fois les termes d'énergie cinétique et potentielle dus aux noyaux et aux autres électrons.
 3. *Résolution des équations de Roothaan-Hall* : Résolvez les équations de Roothaan-Hall en utilisant la matrice de Fock pour obtenir de nouveaux coefficients d'orbitales moléculaires.
@@ -460,7 +460,7 @@ où :
 === Théorie de la Fonctionnelle de Densité (DFT)
 
 La théorie de la fonctionnelle de densité (DFT) est apparue comme une approche précise et alternative aux investigations quantiques moléculaires basées sur les principes premiers. Les calculs DFT représentent la majorité écrasante de tous les calculs de chimie quantique, non seulement en raison de leur précision chimique prouvée, mais aussi grâce à leur coût computationnel relativement faible, comparable à celui de la théorie de Hartree-Fock (HF), tout en traitant la corrélation électronique négligée dans un calcul HF. Ces deux caractéristiques suggèrent que la DFT restera probablement une méthode de premier plan dans le kit d'outils du chimiste quantique pour de nombreuses années encore.
-==== Théorie Fondamentale de la DFT
+- *Théorie Fondamentale de la DFT*
 
 La DFT est principalement une théorie des structures de l'état fondamental électronique basée sur la densité électronique $ρ(r)$, contrairement à la fonction d'onde à plusieurs électrons $Psi(r_1,…,r_N)$. (Son extension aux états excités, la DFT dépendante du temps, est discutée dans la Section 7.3.) Il existe plusieurs similarités et différences distinctes entre les approches traditionnelles de la fonction d'onde et les méthodologies modernes de la DFT.
 
@@ -472,8 +472,7 @@ Cependant, les approches ab initio traditionnelles utilisant la fonction d'onde 
 
 La théorie de la fonctionnelle de densité (DFT) par Hohenberg, Kohn et Sham trouve son origine dans les travaux antérieurs de Dirac, qui a montré que l'énergie d'échange d'un gaz électronique uniforme pouvait être calculée exactement à partir de la densité de charge uniquement. Cependant, bien que cette approche traditionnelle de la fonctionnelle de densité, aujourd'hui appelée "DFT sans orbites", fasse une connexion directe avec la densité seule, en pratique, il s'agit d'une approche directe où les équations nécessaires ne contiennent que la densité électronique, ce qui rend difficile l'obtention de bonnes approximations pour la fonctionnelle d'énergie cinétique. Kohn et Sham ont contourné cette difficulté via une approche indirecte dans laquelle l'énergie cinétique est calculée exactement pour un système de référence non interactif, à savoir le déterminant de Kohn-Sham. C'est cette approche de Kohn-Sham qui a permis à la DFT de devenir un outil pratique pour les calculs.
 
-==== Formalisme de Kohn-Sham
-
+ - *Formalisme de Kohn-Sham*
 Dans le formalisme de Kohn-Sham, l'énergie électronique de l'état fondamental $E$ peut être écrite comme suit :
 $
 E = E_T + E_V + E_J + E_("XC")

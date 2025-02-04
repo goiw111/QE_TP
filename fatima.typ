@@ -1,4 +1,4 @@
-= Méthodologie et calculs avec Quantum ESPRESSO
+= étude pratique avec Quantum ESPRESSO
 == Préparation des fichiers 
 Les fichiers de calculs sont des documents essentiels qui regroupent toutes les données d'entrée, les formules utilisées et les résultats obtenus après les calculs. Ces fichiers servent de base pour effectuer des analyses complexes, des simulations numériques, et des études statistiques. Ils permettent de modéliser des phénomènes, de tester différentes hypothèses, et d’optimiser des processus. Grâce à une gestion soignée de ces fichiers, les utilisateurs peuvent suivre et reproduire les étapes du calcul, garantissant ainsi la fiabilité et la traçabilité des résultats obtenus.
 
@@ -63,9 +63,9 @@ En créant un autre fichier input pour calculer  les équations de Kohn-Sham (DF
  ```
  Finalement en exécutant la commande * bands.x < AlAs_x_bands.in > AlAs_x_bands.out * on trouve les resultats qui vont être enregistrer dans le fichier *AlAs_bands.dat*
 
-= Résultats et Analyse
-== Densité d'états (DOS)
-=== Graphique de la DOS 
+== Résultats et Analyse
+=== Densité d'états (DOS)
+ - *Graphique de la DOS* 
 Le graphe de la densité d'états (DOS) montre l'évolution de la densité électronique en fonction de l'énergie. L'axe horizontal représente l'énergie (en eV), tandis que l'axe vertical représente la densité d'états. Le niveau de Fermi est situé à :
 
 $ E_f = (E_c + E_v)/2 = (4.9153 - 0.84397)/2 = 2,879635 "eV" $
@@ -74,7 +74,7 @@ En exécutant la commande *plot'AlAs.dos' w l 2* sur *Gnuplot* on trouve le grap
   image("Graphe de DOS.png"),
   caption: "Densité d'états en fonction de l'énergie"
 )
-=== Analyse du graphe : nature du matériau et largeur du gap énergétique
+- *Analyse du graphe : nature du matériau et largeur du gap énergétique*
 L’analyse de la densité d’états offre une compréhension approfondie des propriétés électroniques globales du système étudié. Si la DOS présente une région sans états électroniques autour de $E_f$​, cela indique un gap énergétique et suggère que le matériau est un semi-conducteur ou un isolant.
 Si la DOS est non nulle au niveau de $E_f$​, le matériau est un conducteur.
 En observant le graphe de la DOS, on peut identifier la largeur de la bande interdite ($E_g$​) en prenant la différence entre la dernière densité d'état occupée et la première densité d'état inoccupée:
@@ -89,7 +89,7 @@ Pour déterminer $E_g$, il convient d’identifier :
  - Le premier état accessible après $E_f$​, correspondant au début de la bande de conduction.
 
 === Structure de Bandes (BS)
-==== Graphique de la structure de bandes le long des directions de haute symétrie
+  - *Graphique de la structure de bandes le long des directions de haute symétrie*
 Le graphe de la * structure de bandes électroniques * montre l'évolution des niveaux d'énergie en fonction du vecteur d'onde * k * le long des directions de haute symétrie dans la première zone de Brillouin.
 En exécutant la commande *plot'AlAs_bands.gnu' w l 2* on trouve le graphe de structure de bande de l'AlAs ci-dessous:
 #figure(
@@ -97,9 +97,9 @@ En exécutant la commande *plot'AlAs_bands.gnu' w l 2* on trouve le graphe de st
   caption: "La structure de bandes en fonction de vecteur d'onde k"
 )
 
-==== Identification du gap énergétique (direct ou indirect)
+  - *Identification du gap énergétique (direct ou indirect)*
 On sait qu’un gap direct se produit si le minimum de la bande de conduction et le maximum de la bande de valence sont situés au même vecteur d'onde *k*, et un gap indirect se produit si ces extrémités sont situées à des valeurs de *k* différentes.
 En analysant le graphe de la structure de bandes, il est possible d’identifier que le semi-conducteur *AlAs* possède * un gap interdite indirect *.
 
-==== Interprétation des propriétés électroniques à partir des courbes
+  - *Interprétation des propriétés électroniques à partir des courbes*
 En fonction de la structure de bandes, Un gap direct signifie que le matériau peut être utilisé pour des applications optoélectroniques (LED, lasers…). Alors qu’un gap indirect implique une faible émission de lumière et un usage plus adapté aux composants électroniques comme les transistors, c’est le cas de l’*AlAs*.
