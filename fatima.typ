@@ -1,8 +1,9 @@
-= étude pratique avec Quantum ESPRESSO
-== Préparation des fichiers 
+= Étude pratique 
+== Méthodologie de travail avec Quantum ESPRESSO
+=== Préparation des fichiers 
 Les fichiers de calculs sont des documents essentiels qui regroupent toutes les données d'entrée, les formules utilisées et les résultats obtenus après les calculs. Ces fichiers servent de base pour effectuer des analyses complexes, des simulations numériques, et des études statistiques. Ils permettent de modéliser des phénomènes, de tester différentes hypothèses, et d’optimiser des processus. Grâce à une gestion soignée de ces fichiers, les utilisateurs peuvent suivre et reproduire les étapes du calcul, garantissant ainsi la fiabilité et la traçabilité des résultats obtenus.
 
-=== scf.in: Paramètres pour le calcul SCF
+==== scf.in: Paramètres pour le calcul SCF
 Le SCF (Self-Consistent Field) est une méthode de calcul itérative utilisée principalement en chimie quantique et en physique des matériaux pour résoudre les équations de Schrödinger de manière approximative. Elle permet de déterminer les fonctions d'onde et les énergies des électrons dans un système, en considérant l'interaction entre ces électrons de manière auto-cohérente, c’est-à-dire que les résultats obtenus à chaque itération servent de base pour l’itération suivante, jusqu'à convergence des solutions. Le calcul est effectué en utilisant le code ci-dessous et en exécutant la commande :  * pw.x < AlAs_scf.in > AlAs_scf.out * 
 ///code de scf ici
 ``` 
@@ -33,7 +34,7 @@ K_POINTS automatic
 4 4 4 1 1 1 
 ```
 /// resultat de calcule
-=== nscf.in : Paramètres pour le calcul NSCF
+==== nscf.in : Paramètres pour le calcul NSCF
 Le NSCF (Non-Self-Consistent Field) est utilisé pour résoudre les équations de Schrödinger sans tenir compte de l'auto-cohérence des interactions électroniques, généralement pour obtenir des états excités ou des propriétés spectroscopiques.
 Pour effectuer ce calcul, il est essentiel de définir un ensemble de k-points adaptés à l’objectif visé :
 
@@ -42,7 +43,7 @@ Pour effectuer ce calcul, il est essentiel de définir un ensemble de k-points a
 Ces k-points peuvent être extraits à l’aide de logiciels comme *XCrySDen*, qui permet de visualiser la structure cristalline et de générer automatiquement le chemin des points de haute symétrie en fonction du groupe cristallin du matériau. Après ça on remplace *calculation = 'scf'* par *calculation = 'nscf'* finalement on exécute la commande * pw.x < AlAs_nscf.in > AlAs_nscf.out *
 ///code de nscf ici
 /// resultat de calcule
-=== Paramètres pour la densité d’états (DOS) 
+==== Paramètres pour la densité d’états (DOS) 
 Le DOS (Density of States) est une fonction qui décrit la densité des états électroniques disponibles à différentes énergies dans un matériau, et permet d'analyser les propriétés électroniques, comme la conductivité ou l'absorption, en fonction de l'énergie. Le calcul du DOS peut être effectué en utilisant le code ci-dessous et en exécutant la commande :  * dos.x < Dos.in > Dos.out *, on trouve les resultats enregistré dans le fichier *AlAs.dos*
 ``` 
 &DOS
@@ -51,7 +52,7 @@ Le DOS (Density of States) est une fonction qui décrit la densité des états �
     fildos = 'AlAs.dos'
  /
  ```
-=== Paramètres la structure de bandes (BS).
+==== Paramètres la structure de bandes (BS).
 En créant un autre fichier input pour calculer  les équations de Kohn-Sham (DFT) en utilisant une base d'ondes planes et des pseudo-potentiels, on remplace *calculation = 'nscf'* par *calculation = 'bands'* et on exécute la commande * pw.x < AlAs_pw_bands.in > AlAs_pw_bands.out *. Après on crée un nouveaux fichier input avec le code ci-dessous:
 ```  
 &BANDS
