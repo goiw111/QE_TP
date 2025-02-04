@@ -8,9 +8,9 @@
 
 #show: project.with(
   title: "Étude des Propriétés Électroniques de l'Arséniure d'Aluminium (AlAs) à l'aide de Quantum ESPRESSO",
-  subtitle: "TP N 1:",
-  authors: ("souhail",),
-  mentors: ("PR.",),
+  subtitle: "TP : Physique des semi-conducteur",
+  authors: ("Fatema Khay-Ali", "Salma Ettaoumy", "souhail chahmout","omar mansori", "Badr Es-sabbaby"),
+  mentors: ("PR. RFIFI SAAD","Dr. Serifi Ilias"),
   branch: "GESE",
   academic-year: "2024-2025",
   french: true,
@@ -112,8 +112,6 @@ combinant simulations DFT et analyse critique des résultats. Les objectifs se d
 - Applications technologiques :
   - Électronique haute fréquence : Exploitation de la haute mobilité électronique pour les transistors HEMT (High Electron Mobility Transistors).
   - Hétérostructures : Utilisation en combinaison avec GaAs pour des puces quantiques ou des photodétecteurs infrarouges.
-
-[TODO]: Graphiques à intégrer
 
 == Conclusion
 Ce travail pratique combine des simulations DFT via Quantum ESPRESSO et une
