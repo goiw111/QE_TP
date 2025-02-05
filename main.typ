@@ -9,7 +9,7 @@
 #show: project.with(
   title: "Étude des Propriétés Électroniques de l'Arséniure d'Aluminium (AlAs) à l'aide de Quantum ESPRESSO",
   subtitle: "TP : Physique des semi-conducteur",
-  authors: ("Fatema Khay-Ali", "Salma Ettaoumy", "souhail chahmout","omar mansori", "Badr Es-sabbaby"),
+  authors: ("Fatema Khay-Ali", "Salma Ettaoumy", "souhail chahmout","Omar Mansori", "Badr Es-sabbaby"),
   mentors: ("PR. RFIFI SAAD", "Dr. Serifi Ilias"),
   branch: "GESE",
   academic-year: "2024-2025",
