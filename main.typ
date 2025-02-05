@@ -11,7 +11,7 @@
   subtitle: "TP : Physique des semi-conducteur",
   authors: ("Fatema Khay-Ali", "Salma Ettaoumy", "souhail chahmout","Omar Mansori", "Badr Es-sabbaby"),
   mentors: ("PR. RFIFI SAAD", "Dr. Serifi Ilias"),
-  branch: "GESE",
+  branch: "MASTER : Génie Électrique et Systèmes Embarqués",
   academic-year: "2024-2025",
   french: true,
   school-logo: image("logo-TR-2-1.png"),
