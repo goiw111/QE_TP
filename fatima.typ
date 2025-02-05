@@ -69,7 +69,7 @@ En créant un autre fichier input pour calculer  les équations de Kohn-Sham (DF
  - *Graphique de la DOS* 
 Le graphe de la densité d'états (DOS) montre l'évolution de la densité électronique en fonction de l'énergie. L'axe horizontal représente l'énergie (en eV), tandis que l'axe vertical représente la densité d'états. Le niveau de Fermi est situé à :
 
-$ E_f = (E_c + E_v)/2 = (4.9153 - 0.84397)/2 = 2,879635 "eV" $
+$ E_f = (E_c + E_v)/2 = (-4.9153 - 0.84397)/2 = -2,879635 "eV" $
 En exécutant la commande *plot'AlAs.dos' w l 2* sur *Gnuplot* on trouve le graphe ci-dessous:
 #figure(
   image("Graphe de DOS.png"),
